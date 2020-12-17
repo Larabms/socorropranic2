@@ -32,7 +32,7 @@
     }  
     
 
-    function administrador($email){
+    function administrador($e){
         $connection = mysqli_connect("localhost", "root", "", "loja");
         if($connection === false){
             die("Erro de Conexão" . mysqli_connect_error());
