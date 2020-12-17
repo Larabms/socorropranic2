@@ -9,6 +9,7 @@ e VARCHAR (50) NOT NULL
 DROP TABLE IF EXISTS cliente;
 CREATE TABLE cliente(       
 id_cliente INT NOT NULL PRIMARY KEY,
+n VARCHAR (50) ,
 telefone VARCHAR (11),
 endereco VARCHAR (100),
 cidade VARCHAR (50),
@@ -38,11 +39,6 @@ visible BOOLEAN NOT NULL
 INSERT INTO produto (nomepro, descricao, preco, imagem, visible)
 VALUES ();
 
-DROP TABLE IF EXISTS cliente_produto;
-CREATE TABLE cliente_produto(
-id_cliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-id_produto INT,
-FOREIGN KEY (id_produto) REFERENCES produto (id_produto)
-);
+
 
 
